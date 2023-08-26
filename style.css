@@ -1,0 +1,413 @@
+:root{
+    /*Defining Global Colour and Fonts etc*/
+    --color-1:#143774;
+    --color-2:#1792d2;
+    --color-3:#707070;
+    --color-4:#f0f0f0;
+    --color-5:#f8f8f8;
+    --color-6:#112a57;
+  
+
+    --font-1:"Lora-Regular",serif;
+    --font-2:"Ubuntu-Light",Arial;
+    --font-3:"Ubuntu",Arial;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size:16px;
+}
+
+@font-face {
+    font-family: Lora-Regular;
+    src: url('Fonts/Lora-VariableFont_wght.ttf');
+    font-family: Ubuntu;
+    src: url('Fonts/Ubuntu-Bold.ttf');
+    font-family: Ubuntu-Light;
+    src: url('Fonts/Ubuntu-Light.ttf');
+
+}
+
+           /*  Header   */
+.sticky{
+    position: sticky;
+    top:0;
+    height:auto;          
+}
+.logo{
+    color:#143774;
+    font-size: 1.5rem;
+    font-family: 'Lora-Regular', serif;
+    text-decoration: none;
+}
+.tagline{
+    color:#1792d2;
+    font-size: 0.65rem;
+    font-family: 'Ubuntu';
+    
+}
+nav a{
+    
+    color: #707070;
+    text-decoration: none;
+    padding: 0.3em 0em; /*Top-bottom  Left/Right   Adding Padding to Link is also increasing its clickable area*/
+}
+li a{
+    font-size: 0.9rem;
+}
+nav a:hover{
+    color:var(--color-2);
+}
+
+nav a:focus, nav a.active
+{
+ 
+  border-bottom: 2px solid #707070;
+  
+}
+.main-header{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-5);
+    padding-top: 2em;
+    padding-bottom: 2em;
+   
+}
+
+.container{
+    
+   
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.navigation{
+    margin-left: 1em;
+    padding: 0.75em 0;
+    font-family: 'Ubuntu';
+    display: flex;
+   
+    width:50%;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;   
+}
+.nav{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    list-style-type: none;  
+    padding: 0.5em 0;
+}
+nav a.active:hover{
+    border-bottom: 2px solid var(--color-2);
+}
+
+
+
+
+/* Main Section   */
+
+.horizontal-ruler{
+    margin: 2em 0;
+}
+.sidebar{
+    width:20%;
+   
+}
+.main-row{
+   
+    width:78%;
+}
+.recent-article{
+    margin:2.5em 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.recent-article-main{
+    width:70%;
+}
+.recent-article-image-info{
+    width:25%;
+}
+.recent-title{
+    margin-top: 0;
+}
+h2{
+    margin-top: 1em;
+    font-family: 'Lora-Regular',serif;
+    font-weight: 400;
+    color:#143774;
+    font-size: 1.5rem;
+}
+.continue-reading{
+    order:5;
+    display: inline-block;
+   margin-top: 1em;
+    font-size: 0.875rem;
+    color:#1792d2;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+}
+.article-info{
+    order:1;
+    margin-top: 1em;
+    color: #707070;
+    font-size: 0.875rem;
+    font-family: 'Ubuntu-Light';
+}
+.article-body{
+    order:4;
+    margin-top: 1em;
+    font-family: 'Ubuntu-Light';
+    font-size: 1rem;
+}
+.continue-reading:hover, .continue-reading:focus{
+    color:#143774;
+    text-decoration: underline;
+}
+.container2{
+   
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 3em auto;  /* From top/bottom: 3em  left/right: auto width that divides remaining 20% of 
+    width on both sides*/
+}
+img{
+   
+    width:100%;
+    display:block;
+}
+/*Re-ordering featured section*/
+.featured-article{
+    display:flex;
+    flex-direction: column;
+}
+.article-image{
+    width:100%;
+    height: 200px;
+   object-fit: cover;
+    order: -1;
+  
+}
+.featured{
+    width:100%;
+    height:17.5em;
+    object-fit: cover;
+    }
+.articl
+e-title{
+    order:2;
+}
+
+/*Aside*/
+.widget-title{
+    margin: 0.95em 0 1em 0;
+    color: #707070;
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+
+}
+.widget-image1{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+}
+
+h3, .widget-body{
+  
+    margin: 1em 0 1em 0;
+    font-family: 'Ubuntu-Light';
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.side-section{
+    padding: 1em;
+}
+.column1{
+    border: 1em solid #f0f0f0; /*F8F8F8*/
+}
+.column2{
+    margin-top: 2em;
+    border: 1em solid #F0F0F0;
+}
+.widget-ruler{
+    margin: 2em 0em;
+   
+}
+/* .widget-body{
+    padding-bottom: 2em;
+    border-bottom:2px solid blue;
+}
+.widget-body:last-child{
+    border-bottom: 0px;
+} */
+
+/*Footer*/
+footer{
+    font-family: var(--font-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-6);
+    height:150px;
+    color: white;
+}
+.footer-logo{
+    font-size: 1.25em;
+    font-family: 'Ubuntu';
+    color: white;
+}
+.Copyright{
+    margin: 1em 0;
+    font-size: 1em;
+    font-family: 'Ubuntu-Light';
+}
+
+/* Media Queries Header*/
+@media (max-width:1000px){
+    .container2{
+       
+        width:90%;
+       
+    }
+    .sidebar{
+        width:30%;
+       
+    }
+    .main-row{
+       
+        width:68%;
+    }
+    .recent-article-main{
+        width:60%;
+    }
+    .recent-article-image-info{
+        width:38%;
+    }
+
+}
+@media (max-width:735px){
+    
+    .article-body{
+        font-size: 0.85em;
+    }
+
+    .container2{
+       
+        width:90%;
+       
+    }
+    .container{
+        flex-direction: column;
+        width:90%;
+       
+    }
+    .div{
+        align-items: center;
+        margin-top: 0.75em;
+        margin-bottom: 1.5em;
+    }
+    .navigation{
+         width:100%;
+    }
+    .widget-title{
+     font-size:1em;
+    }
+    .widget-body{
+     font-size:0.85em;
+    }
+    .widget-image1{
+        width:100%;
+        height:100px;
+        object-fit: cover;
+    }
+}
+@media (max-width:500px){
+    /*HEADER*/
+
+    .sticky{
+              position: static;  
+    }
+    .logo{
+        font-size: 1.15rem;
+    }
+    .tagline{
+        font-size: 0.5rem;
+    }
+    .container{
+        flex-direction: column;
+        width:90%;
+    }
+    .div{
+        align-items:center;
+        margin-top:0.5em;
+        margin-bottom: 0;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+ font-size: 0.5rem;
+    }
+    .nav li{
+        margin-top: 1em;
+    }
+    .navigation{
+        width:100%;
+        margin-left: 0;
+       
+       
+    }
+    /*MAIN*/
+    
+    .container2{
+        flex-direction: column;
+        width:90%;
+    }
+    .main-row, .sidebar{
+        width: 100%;
+    }
+    .recent-article{
+       
+        flex-direction: column-reverse;
+       
+    }
+    .recent-article-main{
+        width:100%;
+    }
+    .recent-article-image-info{
+        width:100%;
+    }
+    .recent-title{
+        margin-top: 1em;
+    }
+
+    /*Footer*/
+    .footer-logo{
+        font-size: 1em;
+       
+    }
+    .Copyright{
+        font-size: 0.75em;
+      
+    }
+}
+ 
