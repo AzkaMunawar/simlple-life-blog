@@ -1,1 +1,1 @@
-# simlple-life-blog
+# simple-life-blog
