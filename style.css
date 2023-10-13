@@ -401,8 +401,8 @@ footer{
     }
     
     /*Sidebar*/
-  .widget-image1{
-     height: 20em;
+.widget-image1{
+     height: 300px !important;
   }
 
     /*Footer*/
