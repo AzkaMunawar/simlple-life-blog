@@ -399,6 +399,11 @@ footer{
     .recent-title{
         margin-top: 1em;
     }
+    
+    /*Sidebar*/
+  .widget-image1{
+      min-height:200px;
+  }
 
     /*Footer*/
     .footer-logo{
